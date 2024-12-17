@@ -12,25 +12,24 @@ This project demonstrates the deployment of a secure Linux server using Ubuntu. 
 
 ## Repository Structure
 
-Secure-Linux-Server/
+/secure-linux-server-deployment
 │
-├── README.md
-├── LICENSE
+├── README.md                   # Project documentation (this file)
+├── server-setup/
+│   ├── secure_ssh.sh           # Script to secure SSH access
+│   ├── firewall_setup.sh       # UFW configuration script
+│   ├── fail2ban_setup.sh       # Fail2Ban setup and configuration
+│   └── logwatch_setup.sh       # Logwatch installation and setup
+│
+├── automation/
+│   ├── backup_script.sh        # Backup automation script
+│   └── cron_jobs.txt           # Sample cron jobs for automated tasks
+│
 ├── docs/
-│   ├── HOW_TO_USE.md
-│   └── troubleshooting/
-│       ├── ssh_troubleshooting.md
-│       └── firewall_troubleshooting.md
-├── scripts/
-│   ├── setup_server.sh
-│   ├── secure_ssh.sh
-│   ├── configure_firewall.sh
-│   ├── setup_fail2ban.sh
-│   ├── setup_logwatch.sh
-│   ├── optimize_performance.sh
-│   ├── backup_automation.sh
-│   └── install_nginx_https.sh
-├── .gitignore
+│   ├── secure_linux_report.pdf # Detailed project report (upload file here)
+│   └── troubleshooting.md      # SSH & firewall troubleshooting tips
+│
+└── LICENSE                     # License information
 
 
 ## Getting Started
